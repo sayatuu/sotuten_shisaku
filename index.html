@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<img id="gazou" src ="images/botann1.png">
+<audio id="oto">
+    <source src="audio/botann1.mp3">
+</audio>
+<script>
+    (a => {
+    a.oncanplaythrough = () => {
+    document.getElementById('gazou').addEventListener('click', ()=>{a.play()});
+    };
+    })(new Audio("./audio/botann1.mp3"));
+    </script>
+    
